@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi An Beauty</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #fffaf5; color: #333; }
+    header { background: #d4e9d7; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2em; color: #2f5d3f; }
+    nav { background: #fff; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { margin: 0 10px; text-decoration: none; color: #2f5d3f; font-weight: bold; }
+    section { padding: 30px; max-width: 900px; margin: auto; }
+    footer { background: #d4e9d7; text-align: center; padding: 20px; }
+    .rating { display: flex; flex-direction: column; gap: 1em; }
+    .star { color: gold; }
+    form input, form textarea { width: 100%; padding: 10px; margin-top: 10px; border-radius: 8px; border: 1px solid #ccc; }
+    form button { background: #2f5d3f; color: white; padding: 10px 20px; border: none; border-radius: 8px; margin-top: 10px; }
+    iframe { width: 100%; border: none; border-radius: 12px; margin-top: 20px; }
+    .review { background: #f4f9f5; padding: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5em; }
+      nav { font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi An Beauty</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Giới thiệu</a>
+    <a href="#services">Dịch vụ</a>
+    <a href="#booking">Đặt lịch</a>
+    <a href="#reviews">Đánh giá</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <section id="about">
+    <h2>Về Mi An Beauty</h2>
+    <p>Chào mừng bạn đến với Mi An Beauty – nơi mang đến vẻ đẹp tự nhiên, thư giãn và tinh tế. Chúng tôi cam kết mang đến dịch vụ chất lượng cao với không gian xanh mát và đội ngũ chuyên nghiệp.</p>
+  </section>
+
+  <section id="services">
+    <h2>Dịch vụ của chúng tôi</h2>
+    <ul>
+      <li>Chăm sóc da mặt chuyên sâu</li>
+      <li>Massage thư giãn</li>
+      <li>Triệt lông công nghệ cao</li>
+      <li>Detox cơ thể</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Đặt lịch hẹn</h2>
+    <form>
+      <input type="text" placeholder="Họ tên" required />
+      <input type="tel" placeholder="Số điện thoại" required />
+      <input type="datetime-local" required />
+      <textarea placeholder="Ghi chú thêm (nếu có)"></textarea>
+      <button type="submit">Gửi lịch hẹn</button>
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>Khách hàng nói gì?</h2>
+    <div class="rating">
+      <div class="review">
+        <strong>Lan Phương</strong><br/>
+        <span class="star">★★★★★</span><br/>
+        "Dịch vụ tuyệt vời, không gian rất thư giãn!"
+      </div>
+      <div class="review">
+        <strong>Minh Thư</strong><br/>
+        <span class="star">★★★★☆</span><br/>
+        "Nhân viên dễ thương, chăm sóc da cực thích!"
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ & Địa chỉ</h2>
+    <p>Địa chỉ: 123 Lê Văn Sỹ, Q.3, TP.HCM<br/>Điện thoại: 0987 123 456</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." height="300" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi An Beauty. All rights reserved.</p>
+  </footer>
+
+  <!-- Messenger Chat Plugin -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js"></script>
+  <div class="fb-customerchat" attribution="setup_tool" page_id="1234567890"></div>
+</body>
+</html>
