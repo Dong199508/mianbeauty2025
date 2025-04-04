@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi An Beauty</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #f2e8e4;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      color: #b86b77;
+    }
+    nav {
+      background: #fff0f3;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #b86b77;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px 20px;
+    }
+    .booking-form {
+      max-width: 500px;
+      margin: auto;
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .booking-form input,
+    .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .booking-form button {
+      background: #b86b77;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .reviews {
+      max-width: 800px;
+      margin: auto;
+    }
+    .review {
+      background: #fff8f9;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+    .stars {
+      color: #f5b301;
+      margin-bottom: 5px;
+    }
+    iframe {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      background: #f2e8e4;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mi An Beauty</h1>
+  <p>123 Lê Văn Sỹ, Q.3, TP.HCM | 0987 123 456</p>
+</header>
+
+<nav>
+  <a href="#about">Giới thiệu</a>
+  <a href="#services">Dịch vụ</a>
+  <a href="#booking">Đặt lịch</a>
+  <a href="#reviews">Đánh giá</a>
+  <a href="#contact">Liên hệ</a>
+</nav>
+
+<section id="about">
+  <h2>Về chúng tôi</h2>
+  <p>Mi An Beauty là nơi bạn tìm thấy sự thư giãn, chăm sóc sắc đẹp và tinh thần. Không gian ngập tràn cây xanh và hương thơm thiên nhiên sẽ giúp bạn hồi phục năng lượng và cảm nhận sự yêu thương dành cho bản thân.</p>
+
+  
+
+<section id="services">
+  <h2>Dịch vụ nổi bật</h2>
+  <ul>
+    <li>💆‍♀️ Chăm sóc da mặt chuyên sâu</li>
+    <li>🌿 Thải độc, thanh lọc da bằng thảo mộc</li>
+    <li>✨ Trị mụn, nám, tàn nhang công nghệ cao</li>
+    <li>💅 Chăm sóc móng, massage thư giãn</li>
+  </ul>
+</section>
+
+
+<section id="booking">
+  <h2>Đặt lịch hẹn</h2>
+  <form class="booking-form" action="https://formsubmit.io/send/quocdongha1995@gmail.com" method="POST">
+    <input name="_formsubmit_id" type="text" style="display:none">
+    <input type="hidden" name="_redirect" value="https://mianbeauty2025.github.io/thankyou.html">
+    <input type="text" name="name" placeholder="Họ tên" required />
+    <input type="tel" name="phone" placeholder="Số điện thoại" required />
+    <input type="datetime-local" name="appointment_time" required />
+    <textarea name="note" placeholder="Ghi chú thêm (nếu có)"></textarea>
+    <button type="submit">Gửi lịch hẹn</button>
+  </form>
+</section>
+
+
+<section id="reviews">
+  <h2>Đánh giá khách hàng</h2>
+  <div class="reviews">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>"Dịch vụ cực kỳ nhẹ nhàng, không gian xanh mát dễ chịu!"</p>
+      <strong>- Lan Anh</strong>
+    </div>
+    <div class="review">
+      <div class="stars">★★★★☆</div>
+      <p>"Mình sẽ quay lại lần nữa, nhân viên dễ thương lắm."</p>
+      <strong>- Minh Thư</strong>
+    </div>
+  </div>
+</section>
+<h3>Gửi đánh giá của bạn</h3>
+  <form class="booking-form" action="https://formsubmit.io/send/quocdongha1995@gmail.com" method="POST">
+    <input name="_formsubmit_id" type="text" style="display:none">
+    <input type="hidden" name="_redirect" value="https://mianbeauty2025.github.io/thankyou.html">
+    <input type="text" name="review_name" placeholder="Tên của bạn" required />
+    <select name="stars" required>
+      <option value="">Chọn số sao</option>
+      <option value="★★★★★">★★★★★ - Rất hài lòng</option>
+      <option value="★★★★☆">★★★★☆ - Hài lòng</option>
+      <option value="★★★☆☆">★★★☆☆ - Bình thường</option>
+      <option value="★★☆☆☆">★★☆☆☆ - Chưa hài lòng</option>
+      <option value="★☆☆☆☆">★☆☆☆☆ - Tệ</option>
+    </select>
+    <textarea name="review_text" placeholder="Viết cảm nhận của bạn..." required></textarea>
+    <button type="submit">Gửi đánh giá</button>
+  </form>
+
+</section>
+
+<section id="contact">
+  <h2>Liên hệ & Bản đồ</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.256133626953!2d106.66829207592318!3d10.791678489361303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee1a136f14d%3A0x1e4b7f31b589ef4a!2zMTIzIEzDqiBWxINuIFPhu7ksIFBoxrDhu51uZyA3LCBRdeG6rW4gMywgVGjDoG5oIHBo4buRIFRow6FpIEPGoSBI4buTIENow60!5e0!3m2!1svi!2s!4v1649949943111!5m2!1svi!2s" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- Messenger Chat -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: 'v18.0'
+    });
+  };
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="100000000000000"></div>
+
+<footer>
+  © 2025 Mi An Beauty - Thiết kế bởi ChatGPT 💖
+</footer>
+
+</body>
+</html>
